@@ -123,6 +123,7 @@ if __name__ == '__main__':
 
     index_update_list.sort(reverse=True)
     print(index_update_list)
+    index_update_list = index_update_list[:9] #只选取10条数据
 
     # get_txt('http://www.listeningexpress.com/cnn/cnnstudentnews/CNNSN-2017-02-27-CNN-Student-News.html')
     # get_MP3('http://www.listeningexpress.com/cnn/cnnstudentnews/CNNSN-2017-02-27-CNN-Student-News.html')
