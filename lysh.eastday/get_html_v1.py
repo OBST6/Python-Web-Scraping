@@ -3,6 +3,13 @@ import datetime
 
 
 
+now = datetime.datetime.now()
+now = now.strftime('%Y-%m-%d %H:%M')
+list_time = now.split(' ')
+print(list_time)
+
+
+
 
 
 #url = 'http://lyjs.eastday.com/lyj/WebApiService/api/GetSpots?t=%s' % 20170922165700
@@ -26,6 +33,8 @@ print(cur_num)
 
 
 target = open('cur_num.csv', 'a')
+for i in list_time:
+    target.write(i + ',')
 target.write(cur_num)
 target.close()
 
