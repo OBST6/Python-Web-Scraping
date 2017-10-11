@@ -31,10 +31,11 @@ def content_from_chapter():
                                  "div[@class='content_left2']/span/div/p/text()")
     # print(download_link_2)
 
-    target = open('%s.txt'% chapter_title, 'w', encoding='utf-8')
+    target = open('%s.txt' % chapter_title, 'w', encoding='utf-8')
     for i in download_link_2:
         print(i)
-        target.write(i)
+        target.write("   " + i)
+        target.write("\n")
     target.close()
 
 
