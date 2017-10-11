@@ -26,3 +26,7 @@ download_link = tree.xpath("//div[@class='container']/div[@class='wrap s-list']/
                            "ul/li/a/@href")
 print(download_link)
 
+target = open('Index_link.txt', 'w', encoding = 'utf-8')
+for i in download_link:
+    target.write("http://book.sfacg.com" + i + "\n")
+target.close()
